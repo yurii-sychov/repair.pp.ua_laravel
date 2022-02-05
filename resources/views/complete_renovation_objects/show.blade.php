@@ -1,0 +1,1 @@
+complete_renovation_objects/show
