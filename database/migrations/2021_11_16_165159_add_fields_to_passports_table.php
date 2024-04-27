@@ -15,7 +15,7 @@ class AddFieldsToPassportsTable extends Migration
 	{
 		Schema::table('passports', function (Blueprint $table) {
 			$table->string('type')->nullable()->after('place_id')->comment('Тип об`єкту ремонту');
-			$table->date('production_date')->nullable()->after('type')->comment('Дата изготовления');
+			$table->date('production_date')->nullable()->after('type')->comment('Дата виготовлення');
 			$table->string('number', 20)->nullable()->after('production_date')->comment('Номер об`єкту ремонту');
 		});
 	}

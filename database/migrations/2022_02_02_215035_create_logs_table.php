@@ -22,8 +22,8 @@ class CreateLogsTable extends Migration
 			$table->string('link')->nullable()->comment('Посилання (сторінка)');
 			$table->string('action', 50)->nullable()->comment('Повна назва дії');
 			$table->enum('short_action', ['create', 'read', 'update', 'delete', 'unknown'])->nullable()->comment('Коротка назва дії');
-			$table->string('data_before')->nullable()->comment('Дані до дії');
-			$table->string('data_after')->nullable()->comment('Дані після дії');
+			$table->text('data_before')->nullable()->comment('Дані до дії');
+			$table->text('data_after')->nullable()->comment('Дані після дії');
 			$table->string('browser', 10)->nullable()->comment('Браузер');
 			$table->string('ip', 50)->nullable()->comment('IP адреса');
 			$table->string('platform', 10)->nullable()->comment('Платформа');
